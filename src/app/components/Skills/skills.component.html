@@ -1,0 +1,63 @@
+<section class="scalein animation-duration-1000 animation-iteration font-bold border-round">
+  <div class="title text-2xl font-bold uppercase color-title">{{skills}}</div>
+
+  <div class="aling-itens mb-8 mt-5">
+    <div class="front">
+      <div class="font-bold text-center">{{front}}</div>
+
+      <div class="quantity mt-5 mb-4" *ngFor="let item of skillsFront">
+        <div class="content-box">
+          <div class="font-bold mb-2 text-700 text-2xl">{{item.name}}</div>
+          <p-image height="30" width="40" src="{{item.image}}"/>
+          <div class="font-bold mb-2 text-700 text-2xl">{{item.value}}</div>
+        </div>
+
+        <div class="progress cursor-pointer" pTooltip="Conhecimento: {{item.progress}}" tooltipPosition="bottom">
+          <div class="progress-value fadeinleft animation-duration-1000 animation-iteration flex align-items-center justify-content-center
+          font-bold border-round" [style.width]="item.value"></div>
+        </div>
+      </div>
+    </div>
+
+    <p-divider layout="vertical" align="center"><i class="pi pi-angle-double-right text-400 font-bold text-3xl"></i></p-divider>
+
+    <div class="back">
+      <div class="font-bold text-center">{{back}}</div>
+
+      <div class="quantity mt-5 mb-4" *ngFor="let item of skillsBack">
+        <div class="content-box">
+          <div class="flex gap-2">
+            <div class="font-bold mb-2 text-700 text-2xl">{{item.name}}</div>
+            <p-image height="30" width="40" src="{{item.image}}"/>
+          </div>
+
+          <div class="font-bold mb-2 text-700 text-2xl">{{item.value}}</div>
+        </div>
+        <div class="progress cursor-pointer" pTooltip="Conhecimento: {{item.progress}}" tooltipPosition="bottom">
+          <div class="progress-value fadeindown animation-duration-1000 animation-iteration flex align-items-center justify-content-center
+          font-bold border-round" [style.width]="item.value"></div>
+        </div>
+      </div>
+    </div>
+
+    <p-divider layout="vertical" align="center"><i class="pi pi-angle-double-right text-400 font-bold text-3xl"></i></p-divider>
+
+    <div class="database">
+      <div class="font-bold text-center">{{database}}</div>
+      <div class="quantity mt-5 mb-4" *ngFor="let item of skillsDatabases">
+        <div class="content-box">
+          <div class="flex gap-2">
+            <div class="font-bold mb-2 text-700 text-2xl">{{item.name}}</div>
+            <p-image height="30" width="40" src="{{item.image}}"/>
+          </div>
+
+          <div class="font-bold mb-2 text-700 text-2xl">{{item.value}}</div>
+        </div>
+        <div class="progress cursor-pointer" pTooltip="Conhecimento: {{item.value}}" tooltipPosition="bottom">
+          <div class="progress-value fadeinright animation-duration-1000 animation-iteration flex align-items-center justify-content-center
+          font-bold border-round" [style.width]="item.value"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,111 @@
+.aling-itens, .aling-btn{
+  align-items: center;
+  gap: 3%;
+}
+
+.aling-btn{
+  margin-right: 3%;
+}
+
+button{
+  background-color: #9f9368;
+  border: none;
+  width: 100px;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+button:hover{
+  background-color: #ece0b4;
+  border: 2px solid #9f9368;
+}
+
+.translate{
+  background-color: transparent;
+  width: 25px;
+  height: 25px;
+  cursor: pointer;
+}
+
+.translate:hover{
+  background-color: transparent;
+  border: none;
+}
+
+.img{
+  background-image: url('../../../assets/img/person.jpeg');
+  border: 8px solid #9f9368;
+  animation: mudarCor 2s infinite;
+  width: 20rem;
+  height: 20rem;
+}
+
+@keyframes mudarCor {
+  0%, 100% {
+    border-color: #9f9368;
+  }
+  50% {
+    border-color: #fff;
+  }
+}
+
+@media only screen and (min-width: 300px) and (max-width: 400px) {
+  .aling-btn{
+    display: flex;
+    flex-direction: column;
+  }
+
+  button{
+    min-width: 280px;
+    padding-top: 3%;
+    font-size: 15px;
+    margin-bottom: 4%;
+  }
+
+  .aling-image{
+    display: flex;
+    justify-content: center;
+  }
+
+  .img{
+    justify-content: center;
+    align-items: center;
+    width: 15rem;
+    height: 15rem;
+  }
+
+  .content-box-image{
+    text-align: center;
+    margin: 10%;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .itens-header p {
+    text-align: center;
+  }
+
+  .aling-btn{
+    display: flex;
+    gap: 2%;
+  }
+
+  button{
+    font-size: 12px;
+    width: 70px;
+  }
+
+  .img{
+    justify-content: center;
+    align-items: center;
+    width: 15rem;
+    height: 15rem;
+  }
+
+  .content-box-image{
+    text-align: center;
+    margin: 10%;
+  }
+}

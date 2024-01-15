@@ -1,0 +1,35 @@
+<section>
+  <div class="scalein animation-duration-1000 animation-iteration font-bold border-round pt-4">
+    <div class="aling-itens">
+      <div class="flex gap-3">
+        <button (click)="switchLanguage('en')" class="translate" pTooltip="Traduzir" tooltipPosition="bottom">
+          <i class="pi pi-language"></i>
+        </button>
+
+        <p class="text-2xl text-900 font-bold mb-3"> Wendel Lucca </p>
+      </div>
+
+      <div class="aling-btn">
+        <div class="btn-header" *ngFor="let item of btns">
+          <a href="{{item.link}}">
+            <button pButton>
+              {{item.name}}
+            </button>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="aling-itens">
+      <div class="aling-image">
+        <div class="img bg-cover bg-center border-circle mt-4"></div>
+      </div>
+
+      <div class="content-box-image">
+        <div class="text-2xl font-bold uppercase color-title"> {{title}} </div>
+        <div class="mt-4 text-400">{{text_one}}</div>
+        <div class="mt-4 text-400"> {{text_two}} <span class="text-600 font-bold">{{faculty}}</span> 🚀</div>
+      </div>
+    </div>
+  </div>
+</section>

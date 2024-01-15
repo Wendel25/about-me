@@ -1,0 +1,53 @@
+.progress, .progress-value{
+  height: 2vh;
+  border-radius: 10px;
+}
+
+.progress{
+  width: 100%;
+  background-color: #d58d8d;
+}
+
+.progress-value{
+  background-color: #a82f2f;
+}
+
+.front, .back, .database{
+  width: 28%;
+}
+
+.content-box{
+  display: flex;
+  justify-content: space-between;
+}
+
+@media only screen and (min-width: 300px) and (max-width: 400px) {
+  .title{
+    text-align: center;
+  }
+
+  .aling-itens{
+    align-items: center;
+    min-width: 100%;
+  }
+
+  .front, .back, .database{
+    min-width: 90%
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .title{
+    margin-top: 5%;
+    text-align: center;
+  }
+
+  .aling-itens{
+    align-items: center;
+    min-width: 100%;
+  }
+
+  .front, .back, .database{
+    min-width: 90%
+  }
+}

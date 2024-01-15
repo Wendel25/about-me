@@ -1,0 +1,33 @@
+.alint-text{
+  text-align: left;
+}
+
+.aling-itens-icon{
+  display: flex;
+}
+
+@media only screen and (min-width: 300px) and (max-width: 400px) {
+  .alint-text{
+    text-align: center;
+    margin: 4%;
+  }
+
+  .aling-itens-icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .alint-text{
+    margin: 4%;
+    text-align: center;
+  }
+
+  .aling-itens-icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}

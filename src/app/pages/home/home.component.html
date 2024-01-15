@@ -1,0 +1,24 @@
+<div class="content-full bg-no-repeat bg-cover bg-center">
+  <div class="page-init">
+    <app-header></app-header>
+    <p-divider align="center"><i class="pi pi-angle-double-down text-400 font-bold text-3xl"></i></p-divider>
+
+    <div *ngIf="hideInfoSkills">
+      <app-skills></app-skills>
+      <p-divider align="center"><i class="pi pi-angle-double-down text-400 font-bold text-3xl"></i></p-divider>
+    </div>
+
+    <div *ngIf="hideInfoProjects">
+      <app-projects></app-projects>
+    </div>
+
+    <div *ngIf="hideInfoCertificate">
+      <app-certificate></app-certificate>
+      <p-divider></p-divider>
+    </div>
+
+    <div *ngIf="hideInfoProjects" class="mt-4">
+      <app-footer></app-footer>
+    </div>
+  </div>
+</div>

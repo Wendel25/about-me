@@ -1,0 +1,23 @@
+<div class="card mb-5 mt-4 aling-itens gap-5">
+  <p-galleria [value]="images" [numVisible]="5" [circular]="true" [showItemNavigators]="true" [showThumbnails]="false" [containerStyle]="{ 'max-width': '500px' }">
+    <ng-template pTemplate="item" let-item>
+      <img [src]="item.itemImageSrc" style="width: 100%; display: block; height: 230px;" />
+    </ng-template>
+  </p-galleria>
+
+  <div class="alint-text">
+    <div class="font-bold">{{title}}</div>
+
+    <div class="mt-4 text-400 mb-3 alint-text">
+      <p class="mb-3">{{text_one}}</p>
+      <p> {{text_two}} <span class="no-underline text-600"> npm run dev</span>.</p>
+    </div>
+    <span class="text-600 font-bold uppercase alint-text">{{language}}</span>
+
+    <div class="flex gap-3">
+      <div class="mt-4 mb-5" *ngFor="let item of btnRepo">
+        <a pTooltip="{{item.toltip}}" target="_blank" tooltipPosition="bottom" href="{{item.link}}"><i class="pi pi-code text-400 font-bold text-2xl"></i></a>
+      </div>
+    </div>
+  </div>
+</div>
