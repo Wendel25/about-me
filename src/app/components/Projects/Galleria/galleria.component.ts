@@ -37,11 +37,11 @@ export class GalleriaComponent implements OnInit {
 
   ngOnInit() {
     this.images = [
-      { itemImageSrc: 'assets/img/login.png', thumbnailImageSrc: 'assets/img/login.png' },
-      { itemImageSrc: 'assets/img/register.png', thumbnailImageSrc: 'assets/img/register.png' },
-      { itemImageSrc: 'assets/img/products.png', thumbnailImageSrc: 'assets/img/products.png' },
-      { itemImageSrc: 'assets/img/categories.png', thumbnailImageSrc: 'assets/img/categories.png' },
-      { itemImageSrc: 'assets/img/sales.png', thumbnailImageSrc: 'assets/img/sales.png' },
+      { itemImageSrc: 'assets/login.png', thumbnailImageSrc: 'assets/login.png' },
+      { itemImageSrc: 'assets/register.png', thumbnailImageSrc: 'assets/register.png' },
+      { itemImageSrc: 'assets/products.png', thumbnailImageSrc: 'assets/products.png' },
+      { itemImageSrc: 'assets/categories.png', thumbnailImageSrc: 'assets/categories.png' },
+      { itemImageSrc: 'assets/sales.png', thumbnailImageSrc: 'assets/sales.png' },
     ];
   }
 }

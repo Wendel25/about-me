@@ -5,7 +5,7 @@
     <app-galleria></app-galleria>
   </div>
 
-  <div class="mt-4" *ngFor="let item of projectFinished; let i = index">
+  <div class="mt-4" *ngFor="let item of projectsInfo; let i = index">
     <div [ngClass]="{'style-content': i % 2 !== 0}" class="style">
       <div class="flex flex-column">
         <div class="font-bold">{{item.title}}</div>
@@ -16,7 +16,7 @@
           </p>
           <p class="mb-5">{{item.textSecond}}</p>
 
-          <span class="text-600 font-bold uppercase">{{item.languages}}</span>
+          <span class="text-600 font-bold uppercase">{{item.language}}</span>
 
           <div class="aling-icons mt-4 mb-5">
             <a pTooltip="{{item.tooltipTextOne}}" target="_blank" tooltipPosition="bottom" href="{{item.linkApp}}"><i class="pi pi-link text-400 font-bold text-2xl"></i></a>
@@ -24,12 +24,7 @@
           </div>
         </div>
       </div>
-
       <p-image src="{{item.img}}" alt="Image" width="280" height="250"></p-image>
     </div>
   </div>
-
-  <p-divider class="iconProject" tooltipPosition="bottom" (click)="toggleProjectsVisibility()" align="center">
-    <p class="mt-4 mb-5 text-2xl">{{buttonText}}</p>
-  </p-divider>
 </section>

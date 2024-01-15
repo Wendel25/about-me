@@ -26,7 +26,7 @@ export class FooterComponent {
     { icon: 'pi-github', name: 'Github', link: 'https://github.com/Wendel25'},
     { icon: 'pi-linkedin', name: 'Linkedin', link: 'https://www.linkedin.com/in/wendel-l-1353b3205'},
     { icon: 'pi-phone', name: 'WhatsApp', link: 'https://api.whatsapp.com/send?phone=5518981091295'},
-    { icon: 'pi-file-pdf', name: 'Baixar currículo', link: '../../../../assets/img/Wendel Lucca.pdf'},
+    { icon: 'pi-file-pdf', name: 'Baixar currículo', link: '../../../../assets/Wendel Lucca.pdf'},
   ]
 
   navigateToLink(link?: string): void {

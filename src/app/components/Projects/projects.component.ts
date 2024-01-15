@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { Portugues } from '../../i18n/language-pt';
 
@@ -21,23 +21,18 @@ import { DividerModule } from 'primeng/divider';
   styleUrl: './projects.component.scss'
 })
 
-export class ProjectsComponent implements OnInit{
+export class ProjectsComponent{
   title: string = Portugues.TITLE_PROJECTS;
-
-  verMais: string = Portugues.VIEW_MAIS
-  verMenos: string = Portugues.VIEW_MENOS
-
-  buttonText: string = this.verMais;
 
   private tooltips = {
     tooltipOne: Portugues.TEXT_HERO_APP,
     tooltipTwo: Portugues.TEXT_HERO_REPO
   };
 
-  private projectsInfo = [
+  projectsInfo = [
     {
       title: Portugues.PROJECT_HERO,
-      img: '../../../assets/img/project02.png',
+      img: '../../../assets/project02.png',
       textFirst: Portugues.TEXT_HERO_ONE,
       textSecond: Portugues.TEXT_HERO_TWO,
       school: 'Superhero.',
@@ -50,7 +45,7 @@ export class ProjectsComponent implements OnInit{
     },
     {
       title: Portugues.PROJECT_STOCK,
-      img: '../../../assets/img/project04.png',
+      img: '../../../assets/project04.png',
       textFirst: Portugues.TEXT_STOCK_ONE,
       textSecond: Portugues.TEXT_STOCK_TWO,
       school: '',
@@ -63,7 +58,7 @@ export class ProjectsComponent implements OnInit{
     },
     {
       title: Portugues.PROJECT_MARIO,
-      img: '../../../assets/img/project01.png',
+      img: '../../../assets/project01.png',
       textFirst: Portugues.TEXT_MARIO_ONE,
       textSecond: Portugues.TEXT_MARIO_TWO,
       school: 'Manual do Dev.',
@@ -75,27 +70,4 @@ export class ProjectsComponent implements OnInit{
       linkRepo: 'https://github.com/Wendel25/MarioJogo'
     }
   ];
-
-  projectFinished: any[] = [];
-  showAllProjects: boolean = false;
-
-  ngOnInit(): void {
-    this.populateProjects();
-  }
-
-  private populateProjects() {
-    this.projectFinished = [this.projectsInfo[0]];
-  }
-
-  toggleProjectsVisibility() {
-    this.showAllProjects = !this.showAllProjects;
-
-    if (this.showAllProjects) {
-      this.projectFinished = [...this.projectsInfo];
-      this.buttonText = this.verMenos;
-    } else {
-      this.projectFinished = [this.projectsInfo[0]];
-      this.buttonText = this.verMais;
-    }
-  }
 }

@@ -45,7 +45,7 @@ export class HeaderComponent {
     { name: 'Github', link: 'https://github.com/Wendel25' },
     { name: 'Linkedin', link: 'https://www.linkedin.com/in/wendel-l-1353b3205' },
     { name: 'WhatsApp', link: 'https://api.whatsapp.com/send?phone=5518981091295' },
-    { name: 'Currículo', link: '../../../../assets/img/Wendel Lucca.pdf' },
+    { name: 'Currículo', link: '../../../../assets/Wendel Lucca.pdf' },
   ];
 
   navigateToLink(link?: string): void {

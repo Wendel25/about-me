@@ -18,14 +18,14 @@ export class CertificateComponent {
   title: string = Portugues.TITLE_CERTIFICATE
 
   certificateFront = [
-    { imagem: '../../../assets/img/certificado04.png' },
-    { imagem: '../../../assets/img/certificado01.png' },
-    { imagem: '../../../assets/img/progress.jpg' },
+    { imagem: '../../../assets/certificado04.png' },
+    { imagem: '../../../assets/certificado01.png' },
+    { imagem: '../../../assets/progress.jpg' },
   ];
 
   certificateBack = [
-    { imagem: '../../../assets/img/certificado2.jpeg' },
-    { imagem: '../../../assets/img/certificado03.png' },
-    { imagem: '../../../assets/img/certificado05.jpeg' },
+    { imagem: '../../../assets/certificado2.jpeg' },
+    { imagem: '../../../assets/certificado03.png' },
+    { imagem: '../../../assets/certificado05.jpeg' },
   ];
 }
